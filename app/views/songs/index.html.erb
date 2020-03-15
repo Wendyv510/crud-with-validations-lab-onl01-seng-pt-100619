@@ -1,0 +1,7 @@
+<% @songs.each do |song| %> 
+    <div class="song"> 
+    <span> <%= song.title %> </span> 
+
+    <%= button_to "Delete Song", song_path(@song), method=> :delete %> 
+    </div> 
+<% end %> 
